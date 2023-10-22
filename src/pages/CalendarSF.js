@@ -10,8 +10,7 @@ import { Checkbox } from 'primereact/checkbox';
 import { Calendar as PRCalendar } from 'primereact/calendar';
 import { EventService } from '../service/EventService';
 
-
-export const Calendar = () => {
+export const CalendarSF = () => {
 
     const [eventDialog, setEventDialog] = useState(false);
     const [clickedEvent, setClickedEvent] = useState(null);

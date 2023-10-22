@@ -28,6 +28,7 @@ import { TreeDemo } from './components/TreeDemo';
 import { InvalidStateDemo } from './components/InvalidStateDemo';
 
 import { Calendar } from './pages/Calendar';
+import { CalendarSF } from './pages/CalendarSF';
 import { Crud } from './pages/Crud';
 import { EmptyPage } from './pages/EmptyPage';
 
@@ -155,6 +156,7 @@ const App = () => {
             items: [
                 { label: 'Crud', icon: 'pi pi-fw pi-user-edit', to: '/crud' },
                 { label: 'Calendar', icon: 'pi pi-fw pi-calendar-plus', to: '/calendar' },
+                { label: 'CalendarSF', icon: 'pi pi-fw pi-calendar-plus', to: '/calendar-sf' },
                 { label: 'Timeline', icon: 'pi pi-fw pi-calendar', to: '/timeline' },
                 { label: 'Empty Page', icon: 'pi pi-fw pi-circle-off', to: '/empty' }
             ]
@@ -284,6 +286,7 @@ const App = () => {
                 <Route path="/typography" component={TypographyDemo} />
                 <Route path="/text" component={TextDemo} />
                 <Route path="/calendar" component={Calendar} />
+                <Route path="/calendar-sf" component={CalendarSF} />
                 <Route path="/timeline" component={TimelineDemo} />
                 <Route path="/crud" component={Crud} />
                 <Route path="/empty" component={EmptyPage} />
