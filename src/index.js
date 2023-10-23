@@ -2,14 +2,26 @@ import 'react-app-polyfill/ie11';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-//import * as serviceWorker from './serviceWorker';
+
+import { PersistGate } from "redux-persist/integration/react";
+import { Provider } from "react-redux";
+import { persistor, store } from './redux/store';
+
 import { HashRouter } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop';
+
+import { registerLicense } from '@syncfusion/ej2-base';
+
+registerLicense(`${process.env.REACT_APP_SF_KEY}`);
 
 ReactDOM.render(
     <HashRouter>
         <ScrollToTop>
-            <App></App>
+            <Provider store={store}>
+                <PersistGate loading={null} persistor={persistor}>
+                    <App />
+                </PersistGate>
+            </Provider>
         </ScrollToTop>
     </HashRouter>,
     document.getElementById('root')

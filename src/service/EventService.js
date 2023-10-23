@@ -9,7 +9,7 @@ export class EventService {
     }
 
     getEventsSF() {
-        const queryUrl = `${process.env.REACT_APP_API_URL}`;
+        const queryUrl = `${process.env.REACT_APP_EVENTS_API_URL}`;
         return axios.get(queryUrl)
             .then(res => {
                 const events = res.data.events.map(event => ({

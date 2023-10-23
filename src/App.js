@@ -28,7 +28,7 @@ import { TreeDemo } from './components/TreeDemo';
 import { InvalidStateDemo } from './components/InvalidStateDemo';
 
 import { Calendar } from './pages/Calendar';
-import { CalendarSF } from './pages/CalendarSF';
+import { CalendarNew } from './pages/CalendarNew';
 import { Crud } from './pages/Crud';
 import { EmptyPage } from './pages/EmptyPage';
 
@@ -286,7 +286,7 @@ const App = () => {
                 <Route path="/typography" component={TypographyDemo} />
                 <Route path="/text" component={TextDemo} />
                 <Route path="/calendar" component={Calendar} />
-                <Route path="/calendar-sf" component={CalendarSF} />
+                <Route path="/calendar-sf" component={CalendarNew} />
                 <Route path="/timeline" component={TimelineDemo} />
                 <Route path="/crud" component={Crud} />
                 <Route path="/empty" component={EmptyPage} />
