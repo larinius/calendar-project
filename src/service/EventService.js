@@ -19,8 +19,6 @@ export class EventService {
                     url: '',
                     allDay: event.IsAllDay,
                 }));
-
-                console.log(events);
                 return events;
             })
             .catch(error => {
